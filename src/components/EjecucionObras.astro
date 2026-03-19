@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import civilConstruction from '../assets/Obra_civil_en_202603190949.png';
 import realEstateDev from '../assets/Proyecto_de_vivienda__202603190949.png';
 ---
@@ -32,12 +32,15 @@ import realEstateDev from '../assets/Proyecto_de_vivienda__202603190949.png';
       >
         <!-- Card Image -->
         <div class='relative h-40 sm:h-44 overflow-hidden'>
-          <Image
+          <Picture
             src={civilConstruction}
+            formats={['avif', 'webp']}
             alt='Proyecto de construcción civil'
             class='w-full h-full object-cover'
             widths={[300, 600]}
             sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+            quality={80}
+            loading='lazy'
           />
           <div
             class='absolute inset-0 bg-linear-to-t from-iaas-dark/40 to-transparent'
@@ -120,12 +123,15 @@ import realEstateDev from '../assets/Proyecto_de_vivienda__202603190949.png';
       >
         <!-- Card Image -->
         <div class='relative h-40 sm:h-44 overflow-hidden'>
-          <Image
+          <Picture
             src={realEstateDev}
+            formats={['avif', 'webp']}
             alt='Proyecto de desarrollo inmobiliario'
             class='w-full h-full object-cover'
             widths={[300, 600]}
             sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+            quality={80}
+            loading='lazy'
           />
           <div
             class='absolute inset-0 bg-linear-to-t from-iaas-dark/40 to-transparent'
