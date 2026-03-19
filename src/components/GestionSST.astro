@@ -238,152 +238,77 @@ import ppeWorker from '../assets/Trabajador_con_EPP_202603190949.png';
         </div>
       </div>
 
-      <!-- Right Column: EPP Illustration + Culture -->
-      <div class='flex flex-col items-center justify-center gap-8'>
-        <!-- EPP Illustration Area -->
-        <div class='relative w-full max-w-sm'>
-          <!-- Central worker image -->
-          <div class='relative mx-auto w-48 h-64 sm:w-56 sm:h-72'>
-            <Image
-              src={ppeWorker}
-              alt='Trabajador con Equipo de Protección Personal completo'
-              class='w-full h-full object-contain'
-              width={300}
-              height={400}
-            />
+      <!-- Right Column: Vertical image + EPP badges + Culture -->
+      <div class='flex flex-col items-center justify-start gap-6'>
+        <!-- Vertical worker image -->
+        <div class='relative w-full max-w-md px-2 sm:px-6 py-4 sm:py-6'>
+          <div class='relative mx-auto w-64 sm:w-72 rounded-2xl overflow-hidden shadow-[0_20px_50px_-18px_rgba(10,77,140,0.35)] border border-white/70'>
+            <div class='aspect-3/4 sm:aspect-4/5 bg-white'>
+              <Image
+                src={ppeWorker}
+                alt='Trabajador con Equipo de Protección Personal completo'
+                class='w-full h-full object-cover object-top'
+                widths={[320, 480, 768]}
+                sizes='(max-width: 640px) 320px, (max-width: 1024px) 480px, 768px'
+              />
+            </div>
+            <div class='absolute inset-0 bg-linear-to-t from-iaas-dark/35 via-transparent to-transparent'></div>
+            <div class='absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 shadow-md'>
+              <span class='w-2 h-2 rounded-full bg-green-500'></span>
+              <span class='text-[10px] font-bold text-iaas-dark tracking-wide uppercase'>EPP completo</span>
+            </div>
           </div>
 
-          <!-- EPP Icons surrounding the worker -->
-          <div class='absolute top-0 right-0 flex flex-col items-center gap-1'>
-            <div
-              class='w-14 h-14 rounded-full bg-iaas-light border-2 border-iaas-blue/20 flex items-center justify-center'
-            >
-              <svg
-                class='w-6 h-6 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='1.5'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
-                ></path>
+          <!-- Protecciones alrededor de la imagen -->
+          <div class='absolute top-0 left-0 sm:left-2 bg-white/95 backdrop-blur-sm rounded-xl border border-iaas-blue/15 px-2.5 py-2 shadow-md'>
+            <div class='flex items-center gap-1.5'>
+              <svg class='w-3.5 h-3.5 text-iaas-blue shrink-0' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'></path>
               </svg>
+              <span class='text-[10px] font-semibold text-iaas-gray'>Casco</span>
             </div>
-            <span
-              class='text-[9px] font-semibold text-iaas-gray text-center uppercase'
-              >Protective<br />Helmet</span
-            >
           </div>
 
-          <div class='absolute top-8 left-0 flex flex-col items-center gap-1'>
-            <div
-              class='w-14 h-14 rounded-full bg-iaas-light border-2 border-iaas-blue/20 flex items-center justify-center'
-            >
-              <svg
-                class='w-6 h-6 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='1.5'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'></path>
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z'
-                ></path>
+          <div class='absolute top-0 right-0 sm:right-2 bg-white/95 backdrop-blur-sm rounded-xl border border-iaas-blue/15 px-2.5 py-2 shadow-md'>
+            <div class='flex items-center gap-1.5'>
+              <svg class='w-3.5 h-3.5 text-iaas-blue shrink-0' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'></path>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z'></path>
               </svg>
+              <span class='text-[10px] font-semibold text-iaas-gray'>Lentes</span>
             </div>
-            <span
-              class='text-[9px] font-semibold text-iaas-gray text-center uppercase'
-              >Eye Wear</span
-            >
           </div>
 
-          <div class='absolute top-24 right-0 flex flex-col items-center gap-1'>
-            <div
-              class='w-14 h-14 rounded-full bg-iaas-light border-2 border-iaas-blue/20 flex items-center justify-center'
-            >
-              <svg
-                class='w-6 h-6 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='1.5'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z'
-                ></path>
+          <div class='absolute top-1/2 left-0 sm:left-1 -translate-y-1/2 bg-white/95 backdrop-blur-sm rounded-xl border border-iaas-blue/15 px-2.5 py-2 shadow-md'>
+            <div class='flex items-center gap-1.5'>
+              <svg class='w-3.5 h-3.5 text-iaas-blue shrink-0' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11'></path>
               </svg>
+              <span class='text-[10px] font-semibold text-iaas-gray'>Guantes</span>
             </div>
-            <span
-              class='text-[9px] font-semibold text-iaas-gray text-center uppercase'
-              >Ear Plugs</span
-            >
           </div>
 
-          <div
-            class='absolute bottom-8 left-0 flex flex-col items-center gap-1'
-          >
-            <div
-              class='w-14 h-14 rounded-full bg-iaas-light border-2 border-iaas-blue/20 flex items-center justify-center'
-            >
-              <svg
-                class='w-6 h-6 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='1.5'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11'
-                ></path>
+          <div class='absolute top-1/2 right-0 sm:right-1 -translate-y-1/2 bg-white/95 backdrop-blur-sm rounded-xl border border-iaas-blue/15 px-2.5 py-2 shadow-md'>
+            <div class='flex items-center gap-1.5'>
+              <svg class='w-3.5 h-3.5 text-iaas-blue shrink-0' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M13 10V3L4 14h7v7l9-11h-7z'></path>
               </svg>
+              <span class='text-[10px] font-semibold text-iaas-gray'>Chaleco</span>
             </div>
-            <span
-              class='text-[9px] font-semibold text-iaas-gray text-center uppercase'
-              >Safety<br />Gloves</span
-            >
           </div>
 
-          <div
-            class='absolute bottom-4 right-0 flex flex-col items-center gap-1'
-          >
-            <div
-              class='w-14 h-14 rounded-full bg-iaas-light border-2 border-iaas-blue/20 flex items-center justify-center'
-            >
-              <svg
-                class='w-6 h-6 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='1.5'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M13 10V3L4 14h7v7l9-11h-7z'></path>
+          <div class='absolute bottom-0 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-sm rounded-xl border border-iaas-blue/15 px-2.5 py-2 shadow-md'>
+            <div class='flex items-center gap-1.5'>
+              <svg class='w-3.5 h-3.5 text-iaas-blue shrink-0' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'></path>
               </svg>
+              <span class='text-[10px] font-semibold text-iaas-gray whitespace-nowrap'>Botas de seguridad</span>
             </div>
-            <span
-              class='text-[9px] font-semibold text-iaas-gray text-center uppercase'
-              >High<br />Visibility</span
-            >
           </div>
         </div>
 
         <!-- Cultura de Prevención -->
-        <div class='w-full bg-white rounded-xl p-5 sm:p-6 text-center'>
+        <div class='w-full max-w-sm bg-white rounded-xl p-5 sm:p-6 text-center shadow-sm border border-gray-100'>
           <h4
             class='text-xs font-bold text-iaas-blue tracking-wider uppercase mb-3'
           >
