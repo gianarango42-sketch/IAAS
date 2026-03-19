@@ -1,0 +1,228 @@
+---
+import { Picture } from 'astro:assets';
+import environmentalMonitoring from '../assets/field-environmental-quality-monitoring.jpg';
+---
+
+<!-- SECTION 5: GESTIÓN Y MONITOREO AMBIENTAL -->
+<section id='ambiental' class='relative bg-white overflow-hidden'>
+  <div class='max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16 lg:py-20'>
+    <!-- Title -->
+    <h2
+      class='text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-gray-900 mb-4'
+    >
+      Gestión y <span class='text-iaas-blue'>Monitoreo Ambiental</span>
+    </h2>
+
+    <!-- Subtitle -->
+    <p class='text-sm text-iaas-gray leading-relaxed max-w-2xl mb-8 sm:mb-10'>
+      Implementamos soluciones estratégicas para el cumplimiento normativo
+      ambiental, asegurando la armonía entre el desarrollo industrial y la
+      preservación del entorno.
+    </p>
+
+    <!-- Main Image -->
+    <div
+      class='relative rounded-2xl overflow-hidden shadow-lg mb-10 aspect-21/9'
+    >
+      <Picture
+        src={environmentalMonitoring}
+        formats={['avif', 'webp']}
+        alt='Equipo de monitoreo ambiental realizando mediciones en campo'
+        class='w-full h-full object-cover'
+        widths={[600, 1200, 1800]}
+        sizes='(max-width: 768px) 100vw, 1200px'
+      />
+      <div
+        class='absolute inset-0 bg-linear-to-t from-iaas-dark/20 to-transparent'
+      >
+      </div>
+    </div>
+
+    <!-- 3 Columns of Services -->
+    <div
+      class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8'
+    >
+      <!-- Estudios Ambientales -->
+      <div
+        class='bg-iaas-bg rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow'
+      >
+        <div class='flex items-center gap-3 mb-4'>
+          <div
+            class='w-9 h-9 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
+          >
+            <svg
+              class='w-4.5 h-4.5 text-iaas-blue'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+              ></path>
+            </svg>
+          </div>
+          <h3 class='text-sm font-bold text-gray-900'>Estudios Ambientales</h3>
+        </div>
+        <ul class='space-y-2 text-[12px] text-iaas-gray'>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Estudios de Impacto Ambiental (EIA)
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Planes de Manejo Ambiental
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Declaraciones de Impacto Ambiental
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Instrumentos de Gestión Ambiental
+          </li>
+        </ul>
+      </div>
+
+      <!-- Monitoreo de Calidad -->
+      <div
+        class='bg-iaas-bg rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow'
+      >
+        <div class='flex items-center gap-3 mb-4'>
+          <div
+            class='w-9 h-9 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
+          >
+            <svg
+              class='w-4.5 h-4.5 text-iaas-blue'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
+              ></path>
+            </svg>
+          </div>
+          <h3 class='text-sm font-bold text-gray-900'>Monitoreo de Calidad</h3>
+        </div>
+        <ul class='space-y-2 text-[12px] text-iaas-gray'>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Agua, Suelo y Ruido
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Calidad de Aire y Emisiones
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Radiaciones No Ionizantes
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Flora, Fauna y Ecosistemas
+          </li>
+        </ul>
+      </div>
+
+      <!-- Residuos y Auditoría -->
+      <div
+        class='bg-iaas-bg rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow'
+      >
+        <div class='flex items-center gap-3 mb-4'>
+          <div
+            class='w-9 h-9 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
+          >
+            <svg
+              class='w-4.5 h-4.5 text-iaas-blue'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
+              ></path>
+            </svg>
+          </div>
+          <h3 class='text-sm font-bold text-gray-900'>Residuos y Auditoría</h3>
+        </div>
+        <ul class='space-y-2 text-[12px] text-iaas-gray'>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Gestión de Residuos Sólidos
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Auditorías Ambientales
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Fiscalización y Cumplimiento
+          </li>
+          <li class='flex items-start gap-2'>
+            <span class='w-1 h-1 rounded-full bg-iaas-blue mt-1.5 shrink-0'
+            ></span>
+            Planes de Cierre y Remediación
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom: Quote + IAAS GREEN Badge -->
+    <div
+      class='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-2'
+    >
+      <blockquote class='border-l-2 border-green-500/40 pl-4'>
+        <p
+          class='text-xs sm:text-sm text-iaas-gray italic leading-relaxed max-w-lg'
+        >
+          "El desarrollo sostenible es aquel que satisface las necesidades del
+          presente sin comprometer la capacidad de las futuras generaciones."
+        </p>
+      </blockquote>
+      <div
+        class='inline-flex items-center gap-2 bg-iaas-bg rounded-lg px-4 py-2.5 shadow-sm border border-green-200 shrink-0'
+      >
+        <div
+          class='w-6 h-6 rounded-full bg-green-500 flex items-center justify-center'
+        >
+          <svg
+            class='w-3.5 h-3.5 text-white'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z'
+            ></path>
+          </svg>
+        </div>
+        <span class='text-xs font-bold text-green-700 tracking-wide'
+          >IAAS GREEN</span
+        >
+      </div>
+    </div>
+  </div>
+</section>

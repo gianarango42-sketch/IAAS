@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.jlvconsultores.com)",
+      "Bash(find:*)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(bun:*)",
+      "Bash(cd:*)"
+    ]
+  }
+}

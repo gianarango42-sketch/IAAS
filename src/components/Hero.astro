@@ -1,0 +1,299 @@
+---
+import { Picture } from 'astro:assets';
+import heroEngineer from '../assets/hero-project-management-engineer.jpeg';
+---
+
+<!-- SECTION 1: HERO -->
+<section id='inicio' class='relative min-h-screen bg-white overflow-hidden'>
+  <!-- Navbar -->
+  <nav class='relative z-10 w-full bg-white/80 backdrop-blur-md border-b border-gray-100'>
+    <div
+      class='max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-8 lg:px-12 py-4'
+    >
+      <div class='flex items-center gap-2'>
+        <span class='text-2xl font-extrabold text-iaas-blue tracking-tight'
+          >IAAS</span
+        >
+        <span class='hidden sm:inline text-[10px] text-iaas-gray font-medium tracking-wider uppercase'>Consultoría & Supervisión</span>
+      </div>
+      <div class='hidden md:flex items-center gap-1'>
+        <button
+          data-target='supervision'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >Supervisión</button
+        >
+        <button
+          data-target='bim'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >BIM</button
+        >
+        <button
+          data-target='sst'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >SST</button
+        >
+        <button
+          data-target='ambiental'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >Ambiental</button
+        >
+        <button
+          data-target='calidad'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >Calidad</button
+        >
+        <button
+          data-target='obras'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >Obras</button
+        >
+        <button
+          data-target='ingenieria'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >Ingeniería</button
+        >
+        <button
+          data-target='comercializacion'
+          class='nav-tab text-[11px] font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
+          >Comercialización</button
+        >
+        <a
+          href='#contacto'
+          class='ml-3 px-5 py-2 text-[11px] font-bold text-white bg-iaas-blue rounded-full hover:bg-iaas-dark transition-colors'
+          >Contáctanos</a
+        >
+      </div>
+      <!-- Mobile menu button -->
+      <button
+        id='menu-toggle'
+        class='md:hidden text-iaas-blue p-2 cursor-pointer'
+        aria-label='Abrir menú'
+      >
+        <svg
+          class='w-6 h-6'
+          fill='none'
+          stroke='currentColor'
+          viewBox='0 0 24 24'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M4 6h16M4 12h16M4 18h16'></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div
+    id='mobile-menu'
+    class='hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-1 relative z-10'
+  >
+    <button
+      data-target='supervision'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >Supervisión</button
+    >
+    <button
+      data-target='bim'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >BIM</button
+    >
+    <button
+      data-target='sst'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >SST</button
+    >
+    <button
+      data-target='ambiental'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >Ambiental</button
+    >
+    <button
+      data-target='calidad'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >Calidad</button
+    >
+    <button
+      data-target='obras'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >Obras</button
+    >
+    <button
+      data-target='ingenieria'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >Ingeniería</button
+    >
+    <button
+      data-target='comercializacion'
+      class='nav-tab block w-full text-left text-sm font-medium text-iaas-gray hover:text-iaas-blue py-2 transition-colors cursor-pointer'
+      >Comercialización</button
+    >
+    <a
+      href='#contacto'
+      class='block w-full text-center mt-3 px-5 py-2.5 text-sm font-bold text-white bg-iaas-blue rounded-full hover:bg-iaas-dark transition-colors'
+      >Contáctanos</a
+    >
+  </div>
+
+  <!-- Hero Content -->
+  <div
+    class='relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 px-6 sm:px-8 lg:px-12 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-20 items-center min-h-[calc(100vh-80px)]'
+  >
+    <!-- Left Column -->
+    <div class='flex flex-col justify-center text-center lg:text-left'>
+      <!-- Trust badge -->
+      <div class='inline-flex items-center gap-2 bg-iaas-light rounded-full px-4 py-1.5 mb-6 mx-auto lg:mx-0 w-fit reveal'>
+        <span class='w-2 h-2 rounded-full bg-green-500 animate-pulse'></span>
+        <span class='text-[11px] font-semibold text-iaas-blue'>Más de 15 años de experiencia en el sector</span>
+      </div>
+
+      <h1
+        class='text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-bold leading-tight text-gray-900 mb-4 sm:mb-6 reveal'
+      >
+        Soluciones Integrales en
+        <span class='text-iaas-blue'>Gestión de Proyectos</span>
+      </h1>
+      <p
+        class='text-sm sm:text-base text-iaas-gray max-w-md leading-relaxed mb-8 sm:mb-10 mx-auto lg:mx-0 reveal'
+      >
+        Consultoría, Supervisión y Gerencia de Proyectos de Ingeniería y
+        Construcción con estándares de excelencia.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class='flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-10 sm:mb-14 reveal'>
+        <a
+          href='#contacto'
+          class='px-7 py-3 text-sm font-bold text-white bg-iaas-blue rounded-full hover:bg-iaas-dark transition-all hover:shadow-lg hover:shadow-iaas-blue/25'
+          >Solicitar Cotización</a
+        >
+        <a
+          href='#supervision'
+          class='px-7 py-3 text-sm font-bold text-iaas-blue bg-white border-2 border-iaas-blue/20 rounded-full hover:border-iaas-blue hover:bg-iaas-light transition-all'
+          >Ver Servicios</a
+        >
+      </div>
+
+      <!-- Stats Counter -->
+      <div class='grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 reveal'>
+        <div class='text-center lg:text-left'>
+          <p class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter' data-target='500'>0</p>
+          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>Proyectos<br/>Ejecutados</p>
+        </div>
+        <div class='text-center lg:text-left'>
+          <p class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter' data-target='15'>0</p>
+          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>Años de<br/>Experiencia</p>
+        </div>
+        <div class='text-center lg:text-left'>
+          <p class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter' data-target='120'>0</p>
+          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>Profesionales<br/>Especializados</p>
+        </div>
+        <div class='text-center lg:text-left'>
+          <p class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter' data-target='98'>0</p>
+          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>% Satisfacción<br/>del Cliente</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div
+      class='relative flex items-center justify-center order-first lg:order-last reveal'
+    >
+      <div class='relative w-full max-w-sm sm:max-w-md lg:max-w-lg'>
+        <!-- Decorative grid lines behind image -->
+        <div class='absolute -inset-6 sm:-inset-8 -z-1'>
+          <div
+            class='absolute top-0 right-0 w-2/3 h-2/3 border-t-2 border-r-2 border-iaas-blue/10 rounded-tr-3xl'
+          >
+          </div>
+          <div
+            class='absolute bottom-0 left-0 w-2/3 h-2/3 border-b-2 border-l-2 border-iaas-blue/10 rounded-bl-3xl'
+          >
+          </div>
+        </div>
+
+        <!-- Accent bar -->
+        <div
+          class='absolute -left-3 top-8 bottom-8 w-1 bg-iaas-blue rounded-full'
+        >
+        </div>
+
+        <!-- Main Image -->
+        <div
+          class='relative rounded-xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(10,77,140,0.25)]'
+        >
+          <div class='aspect-4/5 sm:aspect-3/4'>
+            <Picture
+              src={heroEngineer}
+              formats={['avif', 'webp']}
+              alt='Ingeniero de IAAS supervisando proyecto de construcción'
+              class='w-full h-full object-cover'
+              widths={[400, 800, 1200]}
+              sizes='(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px'
+            />
+          </div>
+          <!-- Gradient overlay -->
+          <div
+            class='absolute inset-0 bg-linear-to-t from-iaas-dark/60 via-iaas-dark/10 to-transparent'
+          >
+          </div>
+
+          <!-- Floating experience badge on image -->
+          <div class='absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-4 py-2 shadow-md'>
+            <div class='flex items-center gap-2'>
+              <div class='w-8 h-8 rounded-full bg-iaas-blue flex items-center justify-center'>
+                <svg class='w-4 h-4 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                  <path stroke-linecap='round' stroke-linejoin='round' d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'></path>
+                </svg>
+              </div>
+              <div>
+                <p class='text-[10px] font-bold text-gray-900'>ISO 9001:2015</p>
+                <p class='text-[9px] text-iaas-gray'>Gestión de Calidad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating card -->
+        <div
+          class='absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-5 bg-white rounded-xl shadow-lg px-4 py-3 sm:px-5 sm:py-4 border border-gray-100'
+        >
+          <p class='text-xs font-bold text-gray-900'>
+            Compromiso con la excelencia
+          </p>
+          <p class='text-[10px] text-iaas-gray mt-0.5'>
+            Brochure corporativo 2024
+          </p>
+        </div>
+
+        <!-- Small dot accent -->
+        <div class='absolute -top-2 -right-2 w-4 h-4 bg-iaas-blue rounded-full'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trusted by / Sectors bar -->
+  <div class='relative z-10 bg-iaas-dark py-6'>
+    <div class='max-w-7xl mx-auto px-6 sm:px-8 lg:px-12'>
+      <div class='flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[11px] sm:text-xs font-semibold tracking-widest text-white/60 uppercase'>
+        <span class='text-white/40'>Sectores:</span>
+        <span class='hover:text-white transition-colors'>Infraestructura</span>
+        <span class='w-1 h-1 rounded-full bg-white/30'></span>
+        <span class='hover:text-white transition-colors'>Minería</span>
+        <span class='w-1 h-1 rounded-full bg-white/30'></span>
+        <span class='hover:text-white transition-colors'>Energía</span>
+        <span class='w-1 h-1 rounded-full bg-white/30'></span>
+        <span class='hover:text-white transition-colors'>Saneamiento</span>
+        <span class='w-1 h-1 rounded-full bg-white/30'></span>
+        <span class='hover:text-white transition-colors'>Salud</span>
+        <span class='w-1 h-1 rounded-full bg-white/30'></span>
+        <span class='hover:text-white transition-colors'>Educación</span>
+        <span class='w-1 h-1 rounded-full bg-white/30'></span>
+        <span class='hover:text-white transition-colors'>SST</span>
+      </div>
+    </div>
+  </div>
+</section>

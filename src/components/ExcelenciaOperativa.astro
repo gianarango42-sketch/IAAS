@@ -1,0 +1,284 @@
+---
+import { Image } from 'astro:assets';
+import teamIaas from '../assets/professional-engineering-team-fieldwork.jpg';
+---
+
+<!-- SECTION 10: COMPROMISO CON LA EXCELENCIA OPERATIVA -->
+<section id='excelencia' class='relative bg-iaas-bg overflow-hidden'>
+  <div class='max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16 lg:py-20'>
+    <!-- Title -->
+    <h2
+      class='text-2xl sm:text-3xl lg:text-[2.6rem] font-bold leading-tight text-gray-900 text-center mb-4'
+    >
+      Compromiso con la <span class='text-iaas-blue'>Excelencia Operativa</span>
+    </h2>
+
+    <!-- Quote -->
+    <p
+      class='text-sm text-iaas-gray italic text-center leading-relaxed max-w-2xl mx-auto mb-10'
+    >
+      "Integramos experiencia técnica y herramientas digitales para brindar una
+      gestión transparente, eficiente y alineada a sus objetivos estratégicos."
+    </p>
+
+    <!-- 3 Cards -->
+    <div
+      class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10 sm:mb-14'
+    >
+      <!-- Transformación Digital -->
+      <div
+        class='bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center'
+      >
+        <div
+          class='w-12 h-12 rounded-full bg-iaas-light flex items-center justify-center mx-auto mb-4'
+        >
+          <svg
+            class='w-5 h-5 text-iaas-blue'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+            ></path>
+          </svg>
+        </div>
+        <h3 class='text-sm font-bold text-gray-900 mb-2'>
+          Transformación Digital
+        </h3>
+        <p class='text-[11px] text-iaas-gray leading-relaxed'>
+          Implementación de metodologías BIM, VDC y Lean Construction para
+          optimizar procesos.
+        </p>
+      </div>
+
+      <!-- Gestión Transparente -->
+      <div
+        class='bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center'
+      >
+        <div
+          class='w-12 h-12 rounded-full bg-iaas-light flex items-center justify-center mx-auto mb-4'
+        >
+          <svg
+            class='w-5 h-5 text-iaas-blue'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'></path>
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z'
+            ></path>
+          </svg>
+        </div>
+        <h3 class='text-sm font-bold text-gray-900 mb-2'>
+          Gestión Transparente
+        </h3>
+        <p class='text-[11px] text-iaas-gray leading-relaxed'>
+          Control riguroso de costos y plazos bajo estándares internacionales de
+          Project Management.
+        </p>
+      </div>
+
+      <!-- Socio Estratégico -->
+      <div
+        class='bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center sm:col-span-2 lg:col-span-1'
+      >
+        <div
+          class='w-12 h-12 rounded-full bg-iaas-light flex items-center justify-center mx-auto mb-4'
+        >
+          <svg
+            class='w-5 h-5 text-iaas-blue'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z'
+            ></path>
+          </svg>
+        </div>
+        <h3 class='text-sm font-bold text-gray-900 mb-2'>Socio Estratégico</h3>
+        <p class='text-[11px] text-iaas-gray leading-relaxed'>
+          Alineación total con la visión del cliente para asegurar la viabilidad
+          de cada proyecto.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image + ¿Por qué elegir a IAAS? -->
+    <div
+      class='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10 sm:mb-14'
+    >
+      <!-- Image -->
+      <div class='relative rounded-2xl overflow-hidden shadow-lg aspect-16/10'>
+        <Image
+          src={teamIaas}
+          alt='Equipo de profesionales de IAAS en campo'
+          class='w-full h-full object-cover'
+          widths={[400, 800]}
+          sizes='(max-width: 1024px) 100vw, 50vw'
+        />
+        <div
+          class='absolute inset-0 bg-linear-to-t from-iaas-dark/20 to-transparent'
+        >
+        </div>
+      </div>
+
+      <!-- ¿Por qué elegir a IAAS? -->
+      <div>
+        <h3 class='text-xl sm:text-2xl font-bold text-gray-900 mb-6'>
+          ¿Por qué elegir a <span class='text-iaas-blue'>IAAS</span>?
+        </h3>
+        <div class='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+          <div class='flex items-start gap-3'>
+            <div
+              class='w-6 h-6 rounded-full bg-iaas-blue flex items-center justify-center shrink-0 mt-0.5'
+            >
+              <svg
+                class='w-3 h-3 text-white'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='3'
+                ><path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M5 13l4 4L19 7'></path></svg
+              >
+            </div>
+            <p class='text-sm text-gray-700'>
+              Capacidad técnica multidisciplinaria
+            </p>
+          </div>
+          <div class='flex items-start gap-3'>
+            <div
+              class='w-6 h-6 rounded-full bg-iaas-blue flex items-center justify-center shrink-0 mt-0.5'
+            >
+              <svg
+                class='w-3 h-3 text-white'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='3'
+                ><path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M5 13l4 4L19 7'></path></svg
+              >
+            </div>
+            <p class='text-sm text-gray-700'>Cumplimiento normativo estricto</p>
+          </div>
+          <div class='flex items-start gap-3'>
+            <div
+              class='w-6 h-6 rounded-full bg-iaas-blue flex items-center justify-center shrink-0 mt-0.5'
+            >
+              <svg
+                class='w-3 h-3 text-white'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='3'
+                ><path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M5 13l4 4L19 7'></path></svg
+              >
+            </div>
+            <p class='text-sm text-gray-700'>
+              Enfoque en sostenibilidad ambiental
+            </p>
+          </div>
+          <div class='flex items-start gap-3'>
+            <div
+              class='w-6 h-6 rounded-full bg-iaas-blue flex items-center justify-center shrink-0 mt-0.5'
+            >
+              <svg
+                class='w-3 h-3 text-white'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='3'
+                ><path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M5 13l4 4L19 7'></path></svg
+              >
+            </div>
+            <p class='text-sm text-gray-700'>
+              Seguridad y Salud como prioridad
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class='bg-iaas-dark py-5'>
+    <div
+      class='max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-3'
+    >
+      <div class='flex items-center gap-2'>
+        <span class='text-lg font-extrabold text-white tracking-tight'
+          >IAAS</span
+        >
+        <span class='text-[10px] text-white/50 hidden sm:inline'
+          >Consultoría en Gestión Integral de Proyectos</span
+        >
+      </div>
+      <div
+        class='flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-[11px] sm:text-xs text-white/70'
+      >
+        <a
+          href='mailto:proyectos@iaasperu.com'
+          class='hover:text-white transition-colors flex items-center gap-1.5'
+        >
+          <svg
+            class='w-3.5 h-3.5'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+            ><path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+            ></path></svg
+          >
+          proyectos@iaasperu.com
+        </a>
+        <a
+          href='https://www.iaasperu.com'
+          class='hover:text-white transition-colors flex items-center gap-1.5'
+        >
+          <svg
+            class='w-3.5 h-3.5'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            stroke-width='2'
+            ><path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'
+            ></path></svg
+          >
+          www.iaasperu.com
+        </a>
+      </div>
+    </div>
+  </footer>
+</section>
