@@ -1,6 +1,7 @@
 ---
 import { Picture } from 'astro:assets';
 import heroEngineer from '../assets/Ingeniero_a_con_casco_202603190948.png';
+import logo from '../assets/logo.svg';
 ---
 
 <!-- SECTION 1: HERO -->
@@ -10,11 +11,8 @@ import heroEngineer from '../assets/Ingeniero_a_con_casco_202603190948.png';
     <div
       class='max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-8 lg:px-12 py-4'
     >
-      <div class='flex items-center gap-2'>
-        <span class='text-2xl font-extrabold text-iaas-blue tracking-tight'
-          >IAAS</span
-        >
-        <span class='hidden sm:inline text-[10px] text-iaas-gray font-medium tracking-wider uppercase'>Consultoría & Supervisión</span>
+      <div class='flex items-center'>
+        <img src={logo.src} alt='IAAS Logo' class='h-10 w-auto' />
       </div>
       <div class='hidden md:flex items-center gap-1'>
         <button
