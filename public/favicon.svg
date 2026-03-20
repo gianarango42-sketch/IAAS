@@ -10,6 +10,12 @@
         fill: #1a2c6c;
       }
 
+      @media (prefers-color-scheme: dark) {
+        .cls-2, .cls-3 { fill: #ffffff; }
+        .cls-6 { fill: #a8c8f0; }
+        .cls-11 { fill: #c8ddf8; }
+      }
+
       .cls-4 {
         letter-spacing: 0em;
       }
