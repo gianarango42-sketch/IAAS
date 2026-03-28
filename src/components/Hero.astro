@@ -25,7 +25,7 @@ import logo from '../assets/logo.svg';
         <button
           data-target='bim'
           class='nav-tab text-xs font-semibold text-iaas-gray hover:text-iaas-blue px-3 py-2 rounded transition-colors cursor-pointer'
-          >BIM</button
+          >Gerencia</button
         >
         <button
           data-target='sst'
@@ -133,16 +133,6 @@ import logo from '../assets/logo.svg';
   >
     <!-- Left Column -->
     <div class='flex flex-col justify-center text-center lg:text-left'>
-      <!-- Trust badge -->
-      <div
-        class='inline-flex items-center gap-2 bg-iaas-light rounded-full px-4 py-1.5 mb-6 mx-auto lg:mx-0 w-fit reveal'
-      >
-        <span class='w-2 h-2 rounded-full bg-green-500 animate-pulse'></span>
-        <span class='text-[11px] font-semibold text-iaas-blue'
-          >Más de 15 años de experiencia en el sector</span
-        >
-      </div>
-
       <h1
         class='text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-bold leading-tight text-gray-900 mb-4 sm:mb-6 reveal'
       >
@@ -172,51 +162,38 @@ import logo from '../assets/logo.svg';
         >
       </div>
 
-      <!-- Stats Counter -->
-      <div class='grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 reveal'>
-        <div class='text-center lg:text-left'>
-          <p
-            class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter'
-            data-target='500'
-          >
-            0
-          </p>
-          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>
-            Proyectos<br />Ejecutados
-          </p>
-        </div>
-        <div class='text-center lg:text-left'>
-          <p
-            class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter'
-            data-target='15'
-          >
-            0
-          </p>
-          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>
-            Años de<br />Experiencia
-          </p>
-        </div>
-        <div class='text-center lg:text-left'>
-          <p
-            class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter'
-            data-target='120'
-          >
-            0
-          </p>
-          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>
-            Profesionales<br />Especializados
-          </p>
-        </div>
-        <div class='text-center lg:text-left'>
-          <p
-            class='text-2xl sm:text-3xl font-extrabold text-iaas-blue counter'
-            data-target='98'
-          >
-            0
-          </p>
-          <p class='text-[10px] sm:text-[11px] text-iaas-gray font-medium mt-1'>
-            % Satisfacción<br />del Cliente
-          </p>
+      <!-- Nuestros Servicios -->
+      <div class='reveal'>
+        <p class='text-xs font-bold text-gray-900 mb-3 uppercase tracking-wider'>Nuestros Servicios:</p>
+        <div class='grid grid-cols-1 sm:grid-cols-2 gap-2'>
+          <a href='#bim' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Gerencia de Proyectos
+          </a>
+          <a href='#supervision' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Supervisión e Inspección (QHSE)
+          </a>
+          <a href='#ingenieria' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Ingeniería y Expedientes Técnicos
+          </a>
+          <a href='#obras' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Ejecución de Obras
+          </a>
+          <a href='#sst' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Gestión SST
+          </a>
+          <a href='#ambiental' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Gestión Ambiental
+          </a>
+          <a href='#calidad' class='flex items-center gap-2 text-[12px] text-iaas-gray hover:text-iaas-blue transition-colors'>
+            <span class='w-1.5 h-1.5 rounded-full bg-iaas-blue shrink-0'></span>
+            Gestión de Calidad
+          </a>
         </div>
       </div>
     </div>
@@ -266,51 +243,8 @@ import logo from '../assets/logo.svg';
           >
           </div>
 
-          <!-- Floating experience badge on image -->
-          <div
-            class='absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-4 py-2 shadow-md'
-          >
-            <div class='flex items-center gap-2'>
-              <div
-                class='w-8 h-8 rounded-full bg-iaas-blue flex items-center justify-center'
-              >
-                <svg
-                  class='w-4 h-4 text-white'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  stroke-width='2'
-                >
-                  <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <p class='text-[10px] font-bold text-gray-900'>ISO 9001:2015</p>
-                <p class='text-[9px] text-iaas-gray'>Gestión de Calidad</p>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <!-- Floating card -->
-        <div
-          class='absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-5 bg-white rounded-xl shadow-lg px-4 py-3 sm:px-5 sm:py-4 border border-gray-100'
-        >
-          <p class='text-xs font-bold text-gray-900'>
-            Compromiso con la excelencia
-          </p>
-          <p class='text-[10px] text-iaas-gray mt-0.5'>
-            Brochure corporativo 2024
-          </p>
-        </div>
-
-        <!-- Small dot accent -->
-        <div class='absolute -top-2 -right-2 w-4 h-4 bg-iaas-blue rounded-full'>
-        </div>
       </div>
     </div>
   </div>
