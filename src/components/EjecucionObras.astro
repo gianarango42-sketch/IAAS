@@ -2,6 +2,7 @@
 import { Picture } from 'astro:assets';
 import civilConstruction from '../assets/Obra_civil_en_202603190949.png';
 import realEstateDev from '../assets/Proyecto_de_vivienda__202603190949.png';
+import consorcios from '../assets/No_tantas_maquinarias._202603190949.png';
 ---
 
 <!-- SECTION 7: EJECUCIÓN DE OBRAS Y DESARROLLO INMOBILIARIO -->
@@ -206,39 +207,80 @@ import realEstateDev from '../assets/Proyecto_de_vivienda__202603190949.png';
         </div>
       </div>
 
-      <!-- Card 3: Modalidades Contractuales (Dark card) -->
+      <!-- Card 3: Consorcios y Asociaciones -->
       <div
-        class='bg-iaas-dark rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow sm:col-span-2 lg:col-span-1'
+        class='bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100 sm:col-span-2 lg:col-span-1'
       >
-        <!-- Card Header -->
-        <div
-          class='relative h-40 sm:h-44 bg-linear-to-br from-iaas-blue to-iaas-dark flex items-center justify-center p-6'
-        >
-          <div class='text-center'>
-            <h3 class='text-lg font-bold text-white mb-2'>
-              Modalidades<br />Contractuales
-            </h3>
+        <!-- Card Image -->
+        <div class='relative h-40 sm:h-44 overflow-hidden'>
+          <Picture
+            src={consorcios}
+            formats={['avif', 'webp']}
+            alt='Maquinaria y equipos para proyectos de construcción'
+            class='w-full h-full object-cover'
+            widths={[300, 600]}
+            sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+            quality={80}
+            loading='lazy'
+          />
+          <div
+            class='absolute inset-0 bg-linear-to-t from-iaas-dark/40 to-transparent'
+          >
+          </div>
+          <!-- Icon -->
+          <div
+            class='absolute bottom-3 left-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm flex items-center justify-center shadow'
+          >
+            <svg
+              class='w-5 h-5 text-iaas-blue'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+              stroke-width='2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z'
+              ></path>
+            </svg>
           </div>
         </div>
         <!-- Card Content -->
         <div class='p-5'>
-          <p class='text-[12px] text-white/70 mb-4'>
-            Participación estratégica bajo diversas modalidades:
-          </p>
-          <div class='flex flex-wrap gap-2'>
-            <span
-              class='px-3 py-1.5 text-[11px] font-bold text-white bg-white/15 rounded tracking-wider uppercase'
-              >Consorcios</span
-            >
-            <span
-              class='px-3 py-1.5 text-[11px] font-bold text-white bg-white/15 rounded tracking-wider uppercase'
-              >Asociaciones</span
-            >
-            <span
-              class='px-3 py-1.5 text-[11px] font-bold text-white bg-white/15 rounded tracking-wider uppercase'
-              >Participación</span
-            >
-          </div>
+          <h3 class='text-sm font-bold text-gray-900 mb-3'>
+            Consorcios y Asociaciones
+          </h3>
+          <ul class='space-y-2 text-[12px] text-iaas-gray'>
+            <li class='flex items-start gap-2'>
+              <svg
+                class='w-3.5 h-3.5 text-iaas-blue shrink-0 mt-0.5'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='2'
+                ><path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M5 13l4 4L19 7'></path></svg
+              >
+              Participación en consorcios
+            </li>
+            <li class='flex items-start gap-2'>
+              <svg
+                class='w-3.5 h-3.5 text-iaas-blue shrink-0 mt-0.5'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                stroke-width='2'
+                ><path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  d='M5 13l4 4L19 7'></path></svg
+              >
+              Asociaciones estratégicas
+            </li>
+          </ul>
         </div>
       </div>
     </div>
