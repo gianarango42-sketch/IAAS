@@ -3,119 +3,75 @@ import { Picture } from 'astro:assets';
 import bimStructure from '../assets/Estructura_metalica_acero_vista_202603190948.png';
 ---
 
-<!-- SECTION 3: GERENCIA DE PROYECTOS Y METODOLOGÍAS BIM -->
+<!-- SECTION: GERENCIA DE PROYECTOS (PROJECT MANAGEMENT) -->
 <section id='bim' class='relative bg-white overflow-hidden'>
-  <div class='max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:py-16 lg:py-20'>
+  <!-- Subtle radial accent -->
+  <div class='absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-iaas-blue/[0.03] blur-3xl -translate-y-1/2 translate-x-1/3'></div>
+
+  <div class='relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-14 sm:py-20 lg:py-24'>
     <!-- Header -->
-    <div class='flex items-start justify-between mb-8 sm:mb-10'>
-      <div class='max-w-xl'>
-        <h2
-          class='text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-gray-900 mb-3'
-        >
-          Gerencia de Proyectos
-          <span class='text-iaas-blue'>(Project Management)</span>
-        </h2>
-        <p class='text-sm text-iaas-gray leading-relaxed'>
-          Nos especializamos en la Gerencia de Proyectos bajo estándares internacionales como el PMI.
-        </p>
+    <div class='max-w-2xl mb-10 sm:mb-14 reveal'>
+      <div class='inline-flex items-center gap-2 mb-4'>
+        <div class='w-8 h-px bg-iaas-blue'></div>
+        <span class='text-[11px] font-bold text-iaas-blue tracking-[0.2em] uppercase'>Estándares PMI</span>
       </div>
+      <h2 class='text-3xl sm:text-4xl lg:text-[2.8rem] font-bold leading-tight text-gray-900 mb-3'>
+        Gerencia de Proyectos <span class='text-iaas-blue'>(Project Management)</span>
+      </h2>
+      <p class='text-sm sm:text-base text-iaas-gray leading-relaxed'>
+        Nos especializamos en la Gerencia de Proyectos bajo estándares internacionales como el PMI.
+      </p>
     </div>
 
-    <!-- Content Grid: 3 columns on desktop -->
-    <div class='grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mb-10'>
-      <!-- Left Column: Methodologies -->
-      <div class='flex flex-col gap-4'>
-        <!-- BIM & VDC -->
-        <div
-          class='bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow'
-        >
+    <!-- Main content grid -->
+    <div class='grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mb-12 reveal'>
+      <!-- Left: 3 service cards (5 cols) -->
+      <div class='lg:col-span-5 flex flex-col gap-4'>
+        <div class='group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all hover:-translate-y-0.5 border border-gray-100'>
           <div class='flex items-center gap-3 mb-2'>
-            <div
-              class='w-8 h-8 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
-            >
-              <svg
-                class='w-4 h-4 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4'
-                ></path>
+            <div class='w-9 h-9 rounded-lg bg-iaas-blue/10 flex items-center justify-center shrink-0 group-hover:bg-iaas-blue transition-colors'>
+              <svg class='w-4 h-4 text-iaas-blue group-hover:text-white transition-colors' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4'></path>
               </svg>
             </div>
             <h3 class='text-sm font-bold text-gray-900'>Gestión Integral</h3>
           </div>
-          <p class='text-[11px] text-iaas-gray leading-relaxed pl-11'>
+          <p class='text-[11px] text-iaas-gray leading-relaxed pl-12'>
             Gestión en todas las etapas: pre-inversión, inversión y post-inversión.
           </p>
         </div>
 
-        <!-- Estándares PMI -->
-        <div
-          class='bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow'
-        >
+        <div class='group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all hover:-translate-y-0.5 border border-gray-100'>
           <div class='flex items-center gap-3 mb-2'>
-            <div
-              class='w-8 h-8 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
-            >
-              <svg
-                class='w-4 h-4 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z'
-                ></path>
+            <div class='w-9 h-9 rounded-lg bg-iaas-blue/10 flex items-center justify-center shrink-0 group-hover:bg-iaas-blue transition-colors'>
+              <svg class='w-4 h-4 text-iaas-blue group-hover:text-white transition-colors' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4'></path>
               </svg>
             </div>
             <h3 class='text-sm font-bold text-gray-900'>Gestión de la Construcción</h3>
           </div>
-          <p class='text-[11px] text-iaas-gray leading-relaxed pl-11'>
+          <p class='text-[11px] text-iaas-gray leading-relaxed pl-12'>
             Gestión del diseño, gestión de la procura, gestión de la construcción, entrega y puesta en marcha.
           </p>
         </div>
 
-        <!-- Lean Construction -->
-        <div
-          class='bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow'
-        >
+        <div class='group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all hover:-translate-y-0.5 border border-gray-100'>
           <div class='flex items-center gap-3 mb-2'>
-            <div
-              class='w-8 h-8 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
-            >
-              <svg
-                class='w-4 h-4 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M13 7h8m0 0v8m0-8l-8 8-4-4-6 6'></path>
+            <div class='w-9 h-9 rounded-lg bg-iaas-blue/10 flex items-center justify-center shrink-0 group-hover:bg-iaas-blue transition-colors'>
+              <svg class='w-4 h-4 text-iaas-blue group-hover:text-white transition-colors' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M13 7h8m0 0v8m0-8l-8 8-4-4-6 6'></path>
               </svg>
             </div>
             <h3 class='text-sm font-bold text-gray-900'>BIM, VDC & Lean</h3>
           </div>
-          <p class='text-[11px] text-iaas-gray leading-relaxed pl-11'>
-            Implementación de tecnologías de vanguardia: BIM (Building Information Modeling), VDC (Virtual Design and Construction) y Lean Construction.
+          <p class='text-[11px] text-iaas-gray leading-relaxed pl-12'>
+            Implementación de tecnologías de vanguardia: BIM, VDC y Lean Construction.
           </p>
         </div>
       </div>
 
-      <!-- Center: Image -->
-      <div
-        class='relative rounded-2xl overflow-hidden shadow-lg min-h-62.5 sm:min-h-75'
-      >
+      <!-- Center: Image (4 cols) -->
+      <div class='lg:col-span-4 relative rounded-2xl overflow-hidden shadow-xl min-h-64 sm:min-h-80'>
         <Picture
           src={bimStructure}
           formats={['avif', 'webp']}
@@ -126,131 +82,57 @@ import bimStructure from '../assets/Estructura_metalica_acero_vista_202603190948
           quality={80}
           loading='lazy'
         />
-        <div
-          class='absolute inset-0 bg-linear-to-t from-iaas-dark/30 to-transparent'
-        >
-        </div>
+        <div class='absolute inset-0 bg-gradient-to-t from-iaas-dark/40 to-transparent'></div>
       </div>
 
-      <!-- Right Column: Services -->
-      <div class='flex flex-col gap-4'>
-        <!-- Control de Costos -->
-        <div
-          class='bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow'
-        >
+      <!-- Right: 2 service cards (3 cols) -->
+      <div class='lg:col-span-3 flex flex-col gap-4'>
+        <div class='group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all hover:-translate-y-0.5 border border-gray-100'>
           <div class='flex items-center gap-3 mb-2'>
-            <div
-              class='w-8 h-8 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
-            >
-              <svg
-                class='w-4 h-4 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                ></path>
+            <div class='w-9 h-9 rounded-lg bg-iaas-blue/10 flex items-center justify-center shrink-0 group-hover:bg-iaas-blue transition-colors'>
+              <svg class='w-4 h-4 text-iaas-blue group-hover:text-white transition-colors' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'></path>
               </svg>
             </div>
-            <div>
-              <h3 class='text-sm font-bold text-gray-900'>Control de Costos</h3>
-              <p class='text-[11px] text-iaas-gray'>(Cost Engineering)</p>
-            </div>
+            <h3 class='text-[13px] font-bold text-gray-900'>Control de Costos</h3>
           </div>
-          <p class='text-[11px] text-iaas-gray leading-relaxed pl-11'>
-            Control de costos (Cost Engineering), planeamiento y programación financiera.
+          <p class='text-[11px] text-iaas-gray leading-relaxed pl-12'>
+            Cost Engineering, planeamiento y programación financiera.
           </p>
         </div>
 
-        <!-- Planeamiento y Programación -->
-        <div
-          class='bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow'
-        >
+        <div class='group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all hover:-translate-y-0.5 border border-gray-100'>
           <div class='flex items-center gap-3 mb-2'>
-            <div
-              class='w-8 h-8 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
-            >
-              <svg
-                class='w-4 h-4 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'
-                ></path>
+            <div class='w-9 h-9 rounded-lg bg-iaas-blue/10 flex items-center justify-center shrink-0 group-hover:bg-iaas-blue transition-colors'>
+              <svg class='w-4 h-4 text-iaas-blue group-hover:text-white transition-colors' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'>
+                <path stroke-linecap='round' stroke-linejoin='round' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'></path>
               </svg>
             </div>
-            <h3 class='text-sm font-bold text-gray-900'>
-              Planeamiento y Programación
-            </h3>
+            <h3 class='text-[13px] font-bold text-gray-900'>Cronograma y Planificación</h3>
           </div>
-          <p class='text-[11px] text-iaas-gray leading-relaxed pl-11'>
+          <p class='text-[11px] text-iaas-gray leading-relaxed pl-12'>
             Control del cronograma y planificación de obras.
-          </p>
-        </div>
-
-        <!-- Metrados y Ratios Físicos -->
-        <div
-          class='bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow'
-        >
-          <div class='flex items-center gap-3 mb-2'>
-            <div
-              class='w-8 h-8 rounded-lg bg-iaas-light flex items-center justify-center shrink-0'
-            >
-              <svg
-                class='w-4 h-4 text-iaas-blue'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                stroke-width='2'
-              >
-                <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  d='M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z'
-                ></path>
-              </svg>
-            </div>
-            <h3 class='text-sm font-bold text-gray-900'>
-              Metrados y Ratios Físicos
-            </h3>
-          </div>
-          <p class='text-[11px] text-iaas-gray leading-relaxed pl-11'>
-            Cuantificación precisa de partidas y análisis de rendimientos en
-            campo.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- Bottom: Cycle Tabs + Áreas de Control Crítico -->
-    <div
-      class='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6'
-    >
-      <!-- Ciclo de Gestión: 3 fases -->
-      <div class='flex flex-wrap items-center gap-3'>
-        <span
-          class='px-5 py-2.5 text-xs font-bold text-white bg-iaas-blue rounded cursor-pointer'
-          >PRE INVERSIÓN</span
-        >
-        <span
-          class='px-5 py-2.5 text-xs font-bold text-iaas-blue bg-white border border-iaas-blue/20 rounded hover:bg-iaas-blue hover:text-white transition-colors cursor-pointer'
-          >INVERSIÓN</span
-        >
-        <span
-          class='px-5 py-2.5 text-xs font-bold text-iaas-blue bg-white border border-iaas-blue/20 rounded hover:bg-iaas-blue hover:text-white transition-colors cursor-pointer'
-          >POST INVERSIÓN</span
-        >
+    <!-- Phase timeline -->
+    <div class='reveal'>
+      <div class='flex flex-col sm:flex-row items-stretch gap-0 rounded-xl overflow-hidden shadow-md'>
+        <div class='flex-1 bg-iaas-blue px-6 py-4 text-center'>
+          <span class='text-[10px] font-bold text-white/50 tracking-wider uppercase block mb-1'>Fase 1</span>
+          <span class='text-sm font-bold text-white'>Pre Inversión</span>
+        </div>
+        <div class='flex-1 bg-iaas-dark px-6 py-4 text-center'>
+          <span class='text-[10px] font-bold text-white/50 tracking-wider uppercase block mb-1'>Fase 2</span>
+          <span class='text-sm font-bold text-white'>Inversión</span>
+        </div>
+        <div class='flex-1 bg-iaas-blue/80 px-6 py-4 text-center'>
+          <span class='text-[10px] font-bold text-white/50 tracking-wider uppercase block mb-1'>Fase 3</span>
+          <span class='text-sm font-bold text-white'>Post Inversión</span>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
