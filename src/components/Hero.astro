@@ -268,16 +268,56 @@ import logo from '../assets/logo.svg';
   </div>
 
   <!-- Quiénes Somos -->
-  <div class='bg-white py-12 sm:py-16 lg:py-20'>
-    <div class='max-w-7xl mx-auto px-6 sm:px-8 lg:px-12'>
-      <div class='max-w-3xl mx-auto text-center reveal'>
-        <span class='inline-block px-4 py-1.5 text-[11px] font-bold text-iaas-blue bg-iaas-light rounded-full tracking-wider uppercase mb-4'>Acerca de Nosotros</span>
-        <h2 class='text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-gray-900 mb-6'>
-          ¿Quiénes <span class='text-iaas-blue'>Somos</span>?
-        </h2>
-        <p class='text-sm sm:text-base text-iaas-gray leading-relaxed'>
-          Somos una empresa peruana que cuenta con un equipo de profesionales con experiencia en desarrollo de proyectos de construcción de inmobiliaria, infraestructura, minería y retail desde la evaluación de factibilidad, diseño, control y ejecución hasta la entrega y operación de los mismos. Nuestros profesionales están altamente capacitados para promover obras que unan la innovación y el trabajo en equipo. Apostamos por la excelencia y nuestro principal objetivo es la satisfacción de nuestros clientes a través de trabajos de alta calidad.
-        </p>
+  <div class='relative bg-white overflow-hidden'>
+    <!-- Blueprint grid background -->
+    <div class='absolute inset-0 opacity-[0.03]' style="background-image: linear-gradient(rgba(10,77,140,1) 1px, transparent 1px), linear-gradient(90deg, rgba(10,77,140,1) 1px, transparent 1px); background-size: 40px 40px;"></div>
+    <!-- Diagonal accent -->
+    <div class='absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-iaas-light/40 to-transparent'></div>
+
+    <div class='relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-28'>
+      <div class='grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-0 items-center reveal'>
+
+        <!-- Logo - ocupa 2 columnas -->
+        <div class='lg:col-span-2 flex items-center justify-center lg:justify-end lg:pr-12'>
+          <div class='relative'>
+            <!-- Decorative ring behind logo -->
+            <div class='absolute -inset-8 sm:-inset-12 rounded-full border-2 border-dashed border-iaas-blue/10 animate-[spin_60s_linear_infinite]'></div>
+            <div class='absolute -inset-4 sm:-inset-6 rounded-full border border-iaas-blue/5'></div>
+            <!-- Logo -->
+            <img src={logo.src} alt='IAAS Logo' class='relative w-40 sm:w-52 lg:w-60 h-auto drop-shadow-sm' />
+          </div>
+        </div>
+
+        <!-- Vertical divider (desktop only) -->
+        <div class='hidden lg:flex lg:col-span-1 justify-center'>
+          <div class='relative h-full min-h-64'>
+            <div class='absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-iaas-blue/20 to-transparent'></div>
+            <div class='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-iaas-blue/30 ring-4 ring-iaas-blue/10'></div>
+          </div>
+        </div>
+
+        <!-- Horizontal divider (mobile only) -->
+        <div class='lg:hidden flex justify-center'>
+          <div class='w-32 h-px bg-gradient-to-r from-transparent via-iaas-blue/20 to-transparent'></div>
+        </div>
+
+        <!-- Texto - ocupa 2 columnas -->
+        <div class='lg:col-span-2 text-center lg:text-left lg:pl-12'>
+          <div class='inline-flex items-center gap-2 mb-5'>
+            <div class='w-8 h-px bg-iaas-blue'></div>
+            <span class='text-[11px] font-bold text-iaas-blue tracking-[0.2em] uppercase'>Acerca de Nosotros</span>
+          </div>
+          <h2 class='text-3xl sm:text-4xl lg:text-[2.8rem] font-bold leading-tight text-gray-900 mb-6'>
+            ¿Quiénes <span class='text-iaas-blue'>Somos</span>?
+          </h2>
+          <p class='text-sm sm:text-[15px] text-iaas-gray leading-relaxed mb-8'>
+            Somos una empresa peruana que cuenta con un equipo de profesionales con experiencia en desarrollo de proyectos de construcción de inmobiliaria, infraestructura, minería y retail desde la evaluación de factibilidad, diseño, control y ejecución hasta la entrega y operación de los mismos.
+          </p>
+          <p class='text-sm sm:text-[15px] text-iaas-gray leading-relaxed'>
+            Nuestros profesionales están altamente capacitados para promover obras que unan la <strong class='text-gray-900'>innovación</strong> y el <strong class='text-gray-900'>trabajo en equipo</strong>. Apostamos por la excelencia y nuestro principal objetivo es la <strong class='text-gray-900'>satisfacción de nuestros clientes</strong> a través de trabajos de alta calidad.
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
